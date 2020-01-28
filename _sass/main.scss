@@ -1,0 +1,75 @@
+body, html {
+	font-family: 'Roboto', sans-serif;
+	color: $baseColor;
+	height: 100%;
+	margin: 0;
+}
+
+h1 {
+	color: #fff;
+	font-weight: normal;
+	font-size: 2.375em;
+	margin-bottom: 0;
+	line-height: 1;
+
+	span {
+		display: block;
+		line-height: 1.4;
+		font-size: 0.5em;
+		margin-top: 0.3em;
+		width: 500px; // change for smaler screen sizes
+	}
+}
+
+
+h2 {
+	color: #ababab;
+    margin: 2.5em 0 2.5em;
+    font-weight: 400;
+    &:before,
+    &:after {
+		content: "";
+	    width: 2em;
+	    height: 0.3em;
+	    border-top: 2px solid #cbcbcb;
+	    display: inline-block;
+	    margin: 0 0.7em;
+ 	}
+}
+
+p {
+	line-height: 1.5;
+}
+
+section {
+	padding: 2em 0 5em;
+}
+
+article, .claim-container {
+	max-width: 1000px;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: 0 auto;
+}
+
+main {
+	height: 100%;
+	section.home {
+		position: relative;
+		height: 100%;
+		background-image: url(/assets/img/zh-background.jpg);
+		background-repeat: no-repeat;
+	    background-size: cover;
+	    background-position: center;
+	    .claim {
+	    	position: absolute;
+		    top: 50%;
+		    transform: translate(0, -50%);
+	    }
+	}
+	
+}
+
+// @media only screen and (min-width: 600px) {
+	
+// }
