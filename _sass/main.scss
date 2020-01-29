@@ -24,16 +24,17 @@ h1 {
 
 h2 {
 	color: #ababab;
-    margin: 2.5em 0 2.5em;
-    font-weight: 400;
-    &:before,
-    &:after {
-		content: "";
-	    width: 2em;
-	    height: 0.3em;
-	    border-top: 2px solid #cbcbcb;
-	    display: inline-block;
-	    margin: 0 0.7em;
+	text-align: center;
+  margin: 2.5em 0 2.5em;
+  font-weight: 400;
+  &:before,
+  &:after {
+	content: "";
+    width: 2em;
+    height: 0.3em;
+    border-top: 2px solid #cbcbcb;
+    display: inline-block;
+    margin: 0 0.7em;
  	}
 }
 

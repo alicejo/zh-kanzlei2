@@ -6,19 +6,64 @@ section.area {
 
 .area {
 	ul {
-		-webkit-columns: 3 200px;
-    -moz-columns: 3 200px;
-    columns: 3 200px;
+		display: inline-block;
+		vertical-align: top;
+		width: 289px;
     li {
+    	position: relative;
    		list-style-type: none;
+   		margin-top: 1.6em;
+   		margin-bottom: 1.6em;
+   		margin-left: 46px;
     }
-    li:before {
-    	width: 24px;
-    	height: 24px;
+
+    img {
+    	background: #ababab;
+	    height: 24px;
+	    width: auto;
+	    padding: 4px;
+	    border-radius: 28px;
+    }
+
+    li::before {
+    	content: " ";
+    	position: absolute;
+    	top: -7px;
+    	left: -46px;
+    	width: 35px;
+    	height: 35px;
     	background-color: #ababab;
-    }
-    li:before {
-    	content: url(/assets/img/area-icons/agrochemikalien.png) " ";
+    	background-size: 70%;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    border-radius: 18px;
     }
 	}
+}
+
+.area ul:nth-child(1) {
+	li:nth-child(1)::before { background-image: url(/assets/img/area-icons/agrochemikalien.png); }
+	li:nth-child(2)::before { background-image: url(/assets/img/area-icons/automobiltechnik.png); }
+	li:nth-child(3)::before { background-image: url(/assets/img/area-icons/biotechnologie.png); }
+	li:nth-child(4)::before { background-image: url(/assets/img/area-icons/chemie.png); }
+	li:nth-child(5)::before { background-image: url(/assets/img/area-icons/konsumgueter.png); }
+	li:nth-child(6)::before { background-image: url(/assets/img/area-icons/kosmetik.png); }
+	li:nth-child(7)::before { background-image: url(/assets/img/area-icons/umwelttechnologie.png); }
+}
+.area ul:nth-child(2) {
+	li:nth-child(1)::before { background-image: url(/assets/img/area-icons/ingenieurwesen.png); }
+	li:nth-child(2)::before { background-image: url(/assets/img/area-icons/nahrungsmitteltechnologie.png); }
+	li:nth-child(3)::before { background-image: url(/assets/img/area-icons/hausgeraetetechnik.png); }
+	li:nth-child(4)::before { background-image: url(/assets/img/area-icons/anlagen.png); }
+	li:nth-child(5)::before { background-image: url(/assets/img/area-icons/materialien.png); }
+	li:nth-child(6)::before { background-image: url(/assets/img/area-icons/maschinenbau.png); }
+	li:nth-child(7)::before { background-image: url(/assets/img/area-icons/medizinische-geraete.png); }
+}
+.area ul:nth-child(3) {
+	li:nth-child(1)::before { background-image: url(/assets/img/area-icons/verpackungen.png); }
+	li:nth-child(2)::before { background-image: url(/assets/img/area-icons/pharmazie.png); }
+	li:nth-child(3)::before { background-image: url(/assets/img/area-icons/verfahrenstechnik.png); }
+	li:nth-child(4)::before { background-image: url(/assets/img/area-icons/einzelhandel.png); }
+	li:nth-child(5)::before { background-image: url(/assets/img/area-icons/software.png); }
+	li:nth-child(6)::before { background-image: url(/assets/img/area-icons/telekommunikation.png); }
 }
