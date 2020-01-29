@@ -1,0 +1,32 @@
+section.team {
+	text-align: center;
+
+	h4 {
+		color: #7e7e7e;
+		font-weight: normal;
+		text-transform: uppercase;
+	}
+
+
+	ul {
+		li {
+			display: inline-block;
+			margin: 1em 2em;
+
+			img {
+				width: 175px;
+				height: 175px;
+				border-radius: 100px;
+			}
+			h3 {
+				font-size: 1em;
+				margin-bottom: 0;
+			}
+
+			p {
+				color: #7e7e7e;
+				margin-top: 0;
+			}
+		}
+	}
+}
