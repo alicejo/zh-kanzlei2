@@ -1,12 +1,13 @@
+{% assign t = site.data.languages[page.lang] %}
 <ul>
 	<li>
-		<a href="/de/datenschutz">
-			Datenschutz	
+		<a href="{{t.footer.legal_url}}">
+			{{t.footer.legal}}
 		</a>
 	</li>
 	<li>
-		<a href="/de/impressum.html">
-			Impressum
+		<a href="{{t.footer.data_url}}">
+			{{t.footer.data}}
 		</a>
 	</li>
 </ul>
