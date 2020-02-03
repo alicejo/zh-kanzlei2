@@ -10,17 +10,13 @@ header {
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.28);
 }
 
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1.7em;
+}
+
 .language-selector {
-    ul {
-        text-align: right;
-        margin: 0;
-        padding-right: 2em;
-        li {
-        display: inline-block;
-        list-style: none;
-        padding: 0.7em;
-        }
-    }
     a {
         display: inline-block;
         width: 12px;
@@ -49,20 +45,37 @@ header {
 
 // Logo and branding
 .brand {
-  float: left;
+  display: inline-block;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 19px;
+  margin: 19px 0 15px;
+
+  img {
+    height: 29px;
+    position: absolute;
+    top: -8px;
+    right: 12px;
+  }
+
   a,
   a:visited {
+    color: inherit;
     text-decoration: none;
   }
 }
 
 // Navigation 
 nav {
-  float: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   ul {
     list-style: none;
     margin: 0;
-    padding-right: 2em;
+    li:last-child {
+      padding: 0.7em 0 0.7em 0.7em;
+    }
     li {
       float: left;
       position: relative;
@@ -77,15 +90,7 @@ nav {
         &:hover {
           font-weight: bold;
         }
-        &:not(:only-child):after {
-          content: ' ▾';
-        }
       } // Dropdown list
-      ul li {
-        min-width: 190px;
-        a {
-        }
-      }
     }
   }
 }
@@ -109,12 +114,16 @@ nav {
   height: $nav-height;
   width: $nav-height;
 }
-@media only screen and (max-width: 798px) {
+@media only screen and (max-width: $breakpoint) {
   // Hamburger nav visible on mobile only
+  .nav-content {
+    display: block;
+  }
   .nav-mobile {
     display: block;
   }
   nav {
+    display: block;
     width: 100%;
     ul {
       display: none;
@@ -143,6 +152,7 @@ nav {
   span:before
   ,
   span:after {
+    background-color: #ababab;
     cursor: pointer;
     border-radius: 1px;
     height: 5px;
