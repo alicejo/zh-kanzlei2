@@ -23,22 +23,30 @@ h1 {
 
 
 h2 {
+	font-size: 1.37em;
 	color: #ababab;
-    margin: 2.5em 0 2.5em;
-    font-weight: 400;
-    &:before,
-    &:after {
-		content: "";
-	    width: 2em;
-	    height: 0.3em;
-	    border-top: 2px solid #cbcbcb;
-	    display: inline-block;
-	    margin: 0 0.7em;
+	text-align: center;
+  margin: 2.5em 0 2.5em;
+  font-weight: 400;
+  &:before,
+  &:after {
+	content: "";
+    width: 2em;
+    height: 0.3em;
+    border-top: 1.2px solid #cbcbcb;
+    display: inline-block;
+    margin: 0 0.7em;
  	}
 }
 
 p {
+	font-size: 1em;
 	line-height: 1.5;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
 }
 
 section {
@@ -66,8 +74,13 @@ main {
 		    top: 50%;
 		    transform: translate(0, -50%);
 	    }
-	}
-	
+	}	
+}
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 // @media only screen and (min-width: 600px) {

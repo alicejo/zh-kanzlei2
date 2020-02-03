@@ -1,36 +1,38 @@
 {% assign t = site.data.languages[page.lang] %}
 <header class="navigation">
-  <div class="language-selector {{ page.lang }}">
-    <ul>
-      {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-      {% for page in pages %}
-      <li>
-          <a href="{{ page.url }}" class="{{ page.lang }}"></a>
-      </li>
-      {% endfor %}  
-    </ul>
+  <div class="nav-content">
+    <div class="brand">
+      <a href="#!">Ziebig 
+        <br>& Hengelhaupt</a>
+      <img src="/assets/img/ziebig-hengelhaupt-logo.png">
+    </div>
+    <nav>
+      <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+      <ul class="language-selector {{ page.lang }}">
+          {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+          {% for page in pages %}
+            <li>
+              <a href="{{ page.url }}" class="{{ page.lang }}"></a>
+            </li>
+          {% endfor %}  
+      </ul>
+      <ul class="nav-list">
+        <li>
+          <a href="#">{{t.menu.about}}</a>
+        </li>
+        <li>
+          <a href="#">{{t.menu.team}}</a>
+        </li>
+        <li>
+          <a href="#">{{t.menu.areas}}</a>
+        </li>
+        <li>
+          <a href="#">{{t.menu.contact}}</a>
+        </li>
+        <li>
+          {{t.menu.tel}}
+        </li>
+      </ul>
+    </nav>
   </div>
-  <div class="brand">
-    <a href="#!">Logo</a>
-  </div>
-  <nav>
-    <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-    <ul class="nav-list">
-      <li>
-        <a href="#">{{t.menu.about}}</a>
-      </li>
-      <li>
-        <a href="#">{{t.menu.team}}</a>
-      </li>
-      <li>
-        <a href="#">{{t.menu.areas}}</a>
-      </li>
-      <li>
-        <a href="#">{{t.menu.contact}}</a>
-      </li>
-      <li>
-        {{t.menu.tel}}
-      </li>
-    </ul>
-  </nav>
 </header>
