@@ -23,30 +23,75 @@ header {
 }
 
 .language-selector {
-    a {
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        background-size: contain;
-    }
+  a {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-size: contain;
+  }
 }
 
 .language-selector.de {
-    a.de {
-        background-image: url(/assets/img/lang-icons/de-icon.png);
+  a.de {
+    background-image: url(/assets/img/lang-icons/de-icon.png);
+    pointer-events: none;
+  }
+
+  a.cn {
+    background-image: url(/assets/img/lang-icons/ch-icon-bw.png);
+    &:hover {
+        background-image: url(/assets/img/lang-icons/ch-icon.png);
     }
-    a.ch {
-        background-image: url(/assets/img/lang-icons/ch-icon-bw.png);
-        &:hover {
-            background-image: url(/assets/img/lang-icons/ch-icon.png);
-        }
+  }
+
+  a.en {
+    background-image: url(/assets/img/lang-icons/en-icon-bw.png);
+    &:hover {
+        background-image: url(/assets/img/lang-icons/en-icon.png);
     }
-    a.en {
-        background-image: url(/assets/img/lang-icons/en-icon-bw.png);
-        &:hover {
-            background-image: url(/assets/img/lang-icons/en-icon.png);
-        }
+  }
+}
+
+.language-selector.en {
+  a.de {
+    background-image: url(/assets/img/lang-icons/de-icon-bw.png);
+    &:hover {
+      background-image: url(/assets/img/lang-icons/de-icon.png);
     }
+  }
+
+  a.cn {
+    background-image: url(/assets/img/lang-icons/ch-icon-bw.png);
+    &:hover {
+        background-image: url(/assets/img/lang-icons/ch-icon.png);
+    }
+  }
+
+  a.en {
+    pointer-events: none;
+    background-image: url(/assets/img/lang-icons/en-icon.png);
+  }
+}
+
+.language-selector.cn {
+  a.de {
+    background-image: url(/assets/img/lang-icons/de-icon.png);
+    &:hover {
+      background-image: url(/assets/img/lang-icons/de-icon.png);
+    }
+  }
+
+  a.cn {
+    pointer-events: none;
+    background-image: url(/assets/img/lang-icons/ch-icon.png);
+  }
+
+  a.en {
+    background-image: url(/assets/img/lang-icons/en-icon-bw.png);
+    &:hover {
+        background-image: url(/assets/img/lang-icons/en-icon.png);
+    }
+  }
 }
 
 // Logo and branding
@@ -55,7 +100,7 @@ header {
   position: relative;
   text-transform: uppercase;
   font-size: 19px;
-  margin: 19px 0 15px;
+  margin: 28px 0 15px;
 
   img {
     height: 29px;
@@ -78,7 +123,11 @@ nav {
   align-items: flex-end;
   ul.language-selector {
     li {
-      padding: 12px;
+      padding: 12px 10px;
+    }
+
+    li:last-child {
+      padding: 12px 0 12px 10px;
     }
   }
   ul {
