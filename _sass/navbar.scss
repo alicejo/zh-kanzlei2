@@ -153,7 +153,8 @@ nav {
       a:visited {
         display: block;
         color: $baseColor;
-        &:hover {
+        &:hover,
+        &.active {
           font-weight: bold;
         }
       } // Dropdown list

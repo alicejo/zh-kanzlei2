@@ -24,6 +24,10 @@ de:
       und Durchsetzung von Patenten und Gebrauchsmustern steht Ihnen die Kanzlei mit ihrer Expertise 
       zur Seite.
 
+  team:
+    more: mehr erfahren
+    ziebig_url: /de/ziebig
+
   footer:
     legal: Impressum
     legal_url: /de/impressum
@@ -57,11 +61,15 @@ en:
       spectrum of technologies. We are ready to visit clients and to provide the needed consultation 
       to make sure that each case receives the greatest care possible.
 
+  team:
+    more: More
+    ziebig_url: /en/ziebig
+
   footer:
     legal: Legal Notice
-    legal_url: /de/Legal-notice
+    legal_url: /en/legal-notice
     data: Data Protection
-    data_url: /de/data-protection
+    data_url: /en/data-protection
 
 
 cn:
@@ -89,6 +97,6 @@ cn:
 
   footer:
     legal: 联系我们
-    legal_url: /de/Legal-notice
+    legal_url: /cn/legal-notice
     data: 法律声明
-    data_url: /de/data-protection
+    data_url: /cn/data-protection

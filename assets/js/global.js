@@ -24,6 +24,11 @@
 })(jQuery); // end jQuery
 
 
+//
+// active state navbar
+//
+
+
 // window.onscroll = function() {scrollFunction()};
 
 // function scrollFunction() {

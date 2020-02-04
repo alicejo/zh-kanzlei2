@@ -55,6 +55,13 @@ ul {
 	padding-left: 0;
 }
 
+.team img,
+.profile_img img {
+	width: 175px;
+	height: 175px;
+	border-radius: 100px;
+}
+
 section {
 	padding: 3.5em 0 6em;
 }
