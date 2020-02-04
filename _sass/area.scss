@@ -11,6 +11,13 @@ section.area {
 }
 
 .area {
+
+	.technical_areas {
+		display: flex;
+		justify-content: space-around;
+
+	}
+
 	ul {
 		display: inline-block;
 		vertical-align: top;
