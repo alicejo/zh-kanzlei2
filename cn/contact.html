@@ -1,0 +1,24 @@
+---
+lang: cn
+ref: contact
+layout: default
+title: 联系我们
+---
+
+{% assign t = site.data.languages[page.lang] %}
+<section class="info">
+	<article>
+		<h2>{{t.contact.title}}</h2>
+
+		<h3>{{t.contact.company_title}}</h3>
+		<h4>{{t.contact.company_subtitle}}</h4>
+		<p>{{t.contact.street}}<br>
+			{{t.contact.postal}}<br>
+ 			{{t.contact.country}}</p>
+
+ 		<p><span>{{t.contact.tel_title}}</span>{{t.contact.tel}}</p>
+ 		<p><span>{{t.contact.email_title}}</span>{{t.contact.email}}</p>
+ 		<p><span>{{t.contact.web_title}}</span>{{t.contact.web}}</p>
+
+	</article>
+</section>	

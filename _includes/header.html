@@ -16,23 +16,27 @@
             </li>
           {% endfor %}  
       </ul>
-      <ul class="nav-list">
-        <li>
-          <a href="#1">{{t.menu.about}}</a>
-        </li>
-        <li>
-          <a href="#2">{{t.menu.team}}</a>
-        </li>
-        <li>
-          <a href="#3">{{t.menu.areas}}</a>
-        </li>
-        <li>
-          <a href="#">{{t.menu.contact}}</a>
-        </li>
-        <li>
-          {{t.menu.tel}}
-        </li>
-      </ul>
+      <div class="m1 menu">
+      <div id="menu-center">
+        <ul class="nav-list">
+          <li>
+            <a href="#about">{{t.about.title}}</a>
+          </li>
+          <li>
+            <a href="#area">{{t.areas.title}}</a>
+          </li>
+          <li>
+            <a href="#team">{{t.team.title}}</a>
+          </li>
+          <li>
+            <a href="/contact">{{t.menu.contact}}</a>
+          </li>
+          <li>
+            {{t.menu.tel}}
+          </li>
+        </ul>
+        
+      </div>
     </nav>
   </div>
 </header>

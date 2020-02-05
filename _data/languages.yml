@@ -3,9 +3,6 @@ de:
   url: /de
 
   menu:
-    about: Kanzlei
-    team: Team
-    areas: Fachgebiete
     contact: Kontakt
     tel: +49 171 2865587
   
@@ -13,7 +10,7 @@ de:
   sub-claim: maßgeschneiderten IP-Service zum Schutz Ihrer Erfindungen, Marken und Designs.
   
   about:
-    titel: Kanzlei
+    title: Kanzlei
     description: Die Patentanwaltskanzlei ZIEBIG & HENGELHAUPT ist eine auf dem gesamten Gebiet 
       des Gewerblichen Rechtsschutzes tätige Kanzlei, deren Geschichte mehr als 24 Jahre zurückreicht. 
       Die Anfänge der Firma gehen auf 1993/1994 zurück als Klaus Gulde, Marlene Ziebig und Jürgen 
@@ -24,9 +21,54 @@ de:
       und Durchsetzung von Patenten und Gebrauchsmustern steht Ihnen die Kanzlei mit ihrer Expertise 
       zur Seite.
 
+  areas:
+    title: Fachgebiete
+
+    area1: Agrochemikalien
+    area2: Automobiltechnik
+    area3: Biotechnologie
+    area4: Chemie
+    area5: Konsumgüter
+    area6: Kosmetik
+    area7: Umwelttechnologie
+
+    area8: Ingenieurwesen
+    area9: Nahrungsmitteltechnologie
+    area10: Hausgerätetechnik
+    area11: Anlagen und Ausrüstungen
+    area12: Neue Materialien
+    area13: Maschinenbau
+    area14: Medizinische Geräte
+
+    area15: Verpackungen
+    area16: Pharmazie
+    area17: Verfahrenstechnik
+    area18: Einzelhandel und Mode
+    area19: Software & IT
+    area20: Telekommunikation
+
+
   team:
+    title: Team
     more: mehr erfahren
     ziebig_url: /de/ziebig
+
+  contact:
+    title: Kontakt
+    company_title: ZIEBIG & HENGELHAUPT
+    company_subtitle: Patent Attorneys PartG mbB
+    street: Leipziger Straße 49
+    postal: 10117 Berlin
+    country: Germany
+    tel_title: "Tel:"
+    tel: +49-171-2865587
+    email_title: "E-Mail:"
+    email: office@ziebig-patent.com
+    web_title: "Web:"
+    web: www.ziebig-patent.com
+
+
+
 
   footer:
     legal: Impressum
@@ -40,17 +82,14 @@ en:
   url: /
 
   menu:
-    about: Kanzlei
-    team: Team
-    areas: Fachgebiete
-    contact: Kontakt
+    contact: Contact
     tel: +49 171 2865587
   
   claim: Patent- und Rechtsanwaltskanzlei
   sub-claim: maßgeschneiderten IP-Service zum Schutz Ihrer Erfindungen, Marken und Designs.
   
   about:
-    titel: Kanzlei
+    title: Law Firm
     description: The ZIEBIG & HENGELHAUPT partnership company is a full service IP law firm 
       with a history stretching back over more than 24 years. The origins of the firm go back 
       to 1993/1994 when Klaus Gulde, Marlene Ziebig and Jürgen Hengelhaupt established a 
@@ -61,9 +100,51 @@ en:
       spectrum of technologies. We are ready to visit clients and to provide the needed consultation 
       to make sure that each case receives the greatest care possible.
 
+  areas:
+    title: Technical Areas
+
+    area1: Agrochemicals
+    area2: Automotive
+    area3: Biotechnology
+    area4: Chemistry
+    area5: Consumer Goods
+    area6: Cosmetics
+    area7: Environmental Technology
+
+    area8: Engineering
+    area9: Food Technology
+    area10: Household Appliances
+    area11: Machinery
+    area12: New Materials
+    area13: Mechanical Engineering
+    area14: Medical Devices
+
+    area15: Packaging
+    area16: Pharmaceuticals
+    area17: Process Engineering
+    area18: Retail and Fashion
+    area19: Software & IT
+    area20: Telecommunication
+
+
   team:
+    title: Team
     more: More
     ziebig_url: /en/ziebig
+
+  contact:
+    title: Contact
+    company_title: ZIEBIG & HENGELHAUPT
+    company_subtitle: Patent Attorneys PartG mbB
+    street: Leipziger Straße 49
+    postal: 10117 Berlin
+    country: Germany
+    tel_title: "Tel:"
+    tel: +49-171-2865587
+    email_title: "E-Mail:"
+    email: office@ziebig-patent.com
+    web_title: "Web:"
+    web: www.ziebig-patent.com
 
   footer:
     legal: Legal Notice
@@ -77,23 +158,66 @@ cn:
   url: /
 
   menu:
-    about: Kanzlei
-    team: Team
-    areas: Fachgebiete
-    contact: Kontakt
+    contact: 联系我们
     tel: +49 171 2865587
   
   claim: Patent- und Rechtsanwaltskanzlei
   sub-claim: maßgeschneiderten IP-Service zum Schutz Ihrer Erfindungen, Marken und Designs.
   
   about:
-    titel: Kanzlei
+    title: Kanzlei
     description: ZIEBIG&HENGELHAUPT专利律师事务所是一家提供全方位服务的知识产权律师事务所，
       其有着24年的历史。 该事务所的起源可以追溯到1993/1994年，当时Klaus Gulde，Marlene Ziebig和Jürgen
       Hengelhaupt在柏林建立了专利律师事务所，Gulde Hengelhaupt Ziebig&Schneider，并积累了德国和国际的众多客户。
     description2: Die Patentanwaltskanzlei ZIEBIG & HENGELHAUPT bietet einen maßgeschneiderten 
       ZIEBIG&HENGELHAUPT提供量身定制的知识产权服务，主要针对不同领域的专利申请，以便为各种技术提供专业和深入的知识产权服务。
       我们随时准备着为客户提供所需的咨询服务，以确保每个案件都得到足够的重视。
+
+  areas:
+    title: 技术领域
+
+    area1: 农用化学品
+    area2: 汽车工程
+    area3: 生物技术
+    area4: 化学
+    area5: 消费品
+    area6: 化妆品
+    area7: 环境技术
+
+    area8: 工程学
+    area9: 食品科技
+    area10: 家用设备
+    area11: 机械
+    area12: 新材料
+    area13: 机械工业
+    area14: 医疗设备
+
+    area15: 包装技术
+    area16: 制药学
+    area17: 过程工程
+    area18: 零售和时尚
+    area19: 软件和IT
+    area20: 通信工程
+
+
+  team:
+    title: 团队
+    more: More
+    ziebig_url: /cn/ziebig
+
+  contact:
+    title: 联系我们
+    company_title: ZIEBIG & HENGELHAUPT
+    company_subtitle: Patent Attorneys PartG mbB
+    street: Leipziger Straße 49
+    postal: 10117 Berlin
+    country: Germany
+    tel_title: "Tel:"
+    tel: +49-171-2865587
+    email_title: "E-Mail:"
+    email: office@ziebig-patent.com
+    web_title: "Web:"
+    web: www.ziebig-patent.com
 
   footer:
     legal: 联系我们

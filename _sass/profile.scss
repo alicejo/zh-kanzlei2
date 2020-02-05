@@ -1,3 +1,16 @@
+//
+//
+// Profile / Datenschutz / Impressum / Kontakt
+//
+//
+
+.info,
+.profile {
+	h3, h4 {
+		color: #ababab;
+	}
+}
+
 .profile {
 	.profile_img {
 		text-align: center;
@@ -5,11 +18,23 @@
 
 	.headline {
 		text-align: center;
+		margin-top: 2.5em;
+		margin-bottom: 4em;
+		h2 {
+			margin: 2.5em 0 0;
+		}
+		h4 {
+	    font-size: 0.76em;
+	    margin-top: 0.5em;
+		}
+		h3 {
+			margin: 1em 0;
+		}
 	}
 
 	h3 {
-		color: #ababab;
 		font-weight: normal;
+		margin: 2.5em 0 1em;
 	}
 
 	ul {

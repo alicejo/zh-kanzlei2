@@ -66,15 +66,15 @@ header {
 
 .language-selector.cn {
   a.de i {
-    background-image: url(/assets/img/lang-icons/de-icon.png);
+    background-image: url(/assets/img/lang-icons/de-icon-bw.png);
     &:hover {
       background-image: url(/assets/img/lang-icons/de-icon.png);
     }
   }
 
   a.cn i {
-    pointer-events: none;
     background-image: url(/assets/img/lang-icons/ch-icon.png);
+    pointer-events: none;
   }
 
   a.en i {
