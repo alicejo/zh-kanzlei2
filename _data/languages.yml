@@ -1,6 +1,8 @@
 de:
   lang: de
   url: /de
+  # subpages url
+  url_sub: /de
 
   menu:
     contact: Kontakt
@@ -52,6 +54,8 @@ de:
     title: Team
     more: mehr erfahren
     ziebig_url: /de/ziebig
+    patent_attorney_f: Patentanwalt
+    patent_attorney: Patentanwältin
 
   contact:
     title: Kontakt
@@ -80,6 +84,8 @@ de:
 en:
   lang: en
   url: /
+  # subpages url
+  url_sub: /en
 
   menu:
     contact: Contact
@@ -129,8 +135,10 @@ en:
 
   team:
     title: Team
-    more: More
+    more: About
     ziebig_url: /en/ziebig
+    patent_attorney_f: Patent Attorney
+    patent_attorney: Patent Attorney
 
   contact:
     title: Contact
@@ -155,7 +163,9 @@ en:
 
 cn:
   lang: cn
-  url: /
+  url: /cn
+  # subpages url
+  url_sub: /cn su
 
   menu:
     contact: 联系我们
@@ -202,8 +212,10 @@ cn:
 
   team:
     title: 团队
-    more: More
+    more: About
     ziebig_url: /cn/ziebig
+    patent_attorney_f: Patent Attorney
+    patent_attorney: Patent Attorney
 
   contact:
     title: 联系我们

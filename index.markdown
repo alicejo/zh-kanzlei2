@@ -4,8 +4,7 @@ ref: home
 layout: default
 ---
 {% include home.html %}
-<div class="">
-	{% include about.html %}
-	{% include area.html %}
-	{% include team.html %}
-</div>
+{% include about.html %}
+{% include area.html %}
+{% include team.html %}
+{% include contact.html %}
