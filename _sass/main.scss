@@ -1,3 +1,9 @@
+//
+//
+// Main
+//
+//
+
 body, html {
 	font-family: 'Roboto', sans-serif;
 	color: $baseColor;
@@ -49,8 +55,23 @@ ul {
 	padding-left: 0;
 }
 
+.team img,
+.profile_img img {
+	width: 175px;
+	height: 175px;
+	border-radius: 100px;
+}
+
 section {
-	padding: 2em 0 5em;
+	padding: 3.5em 0 6em;
+}
+
+section.info {
+	margin-top: 5em;
+}
+
+section.home {
+	padding: 0;
 }
 
 article, .claim-container {
@@ -67,22 +88,74 @@ main {
 		height: 100%;
 		background-image: url(/assets/img/zh-background.jpg);
 		background-repeat: no-repeat;
-	    background-size: cover;
-	    background-position: center;
-	    .claim {
-	    	position: absolute;
-		    top: 50%;
-		    transform: translate(0, -50%);
-	    }
+    background-size: cover;
+    background-position: center;
+    .claim {
+    	position: absolute;
+	    top: 50%;
+	    transform: translate(0, -50%);
+    }
 	}	
 }
 
-.clearfix {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-// @media only screen and (min-width: 600px) {
-	
-// }
+footer {
+  display: flex;
+  justify-content: space-between;
+  // border-top: 1.5px solid #e1e1e1;
+  padding: 1em 1em 1em 1em;
+
+	h4 {
+		margin: 1em 1em;
+	}
+
+	ul {
+		margin: 0;
+	}
+
+	li {
+		display: inline-block;
+		margin: 1em 1em 1em 0;
+	}
+	a {
+		display: inline-block;
+		text-decoration: none;
+		color: #7e7e7e;
+		&:hover {
+			font-weight: bold;			
+		}
+	}
+}
+
+section.area,
+section.contact,
+section.info {
+	-webkit-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+	box-shadow:0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+// Cookie Banner
+#cookie-law { 
+    max-width:940px;
+    background:#EEEADD; 
+    margin:10px auto 0; 
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+}
+ 
+#cookie-law p { 
+    padding:10px; 
+    font-size:1.2em; 
+    font-weight:bold; 
+    text-align:center; 
+    color:#682008; 
+    margin:0;
+}

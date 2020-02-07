@@ -1,3 +1,9 @@
+//
+//
+// Navbar
+//
+//
+
 // Outer navigation wrapper
 header {
   position: fixed;
@@ -16,31 +22,67 @@ header {
   padding: 0 1.7em;
 }
 
-.language-selector {
-    a {
-        display: inline-block;
-        width: 12px;
-        height: 12px;
-        background-size: contain;
+.language-selector.de {
+  a.de i {
+    background-image: url(/assets/img/lang-icons/de-icon.png);
+    pointer-events: none;
+  }
+
+  a.cn i {
+    background-image: url(/assets/img/lang-icons/ch-icon-bw.png);
+    &:hover {
+        background-image: url(/assets/img/lang-icons/ch-icon.png);
     }
+  }
+
+  a.en i {
+    background-image: url(/assets/img/lang-icons/en-icon-bw.png);
+    &:hover {
+        background-image: url(/assets/img/lang-icons/en-icon.png);
+    }
+  }
 }
 
-.language-selector.de {
-    a.de {
-        background-image: url(/assets/img/lang-icons/de-icon.png);
+.language-selector.en {
+  a.de i {
+    background-image: url(/assets/img/lang-icons/de-icon-bw.png);
+    &:hover {
+      background-image: url(/assets/img/lang-icons/de-icon.png);
     }
-    a.ch {
-        background-image: url(/assets/img/lang-icons/ch-icon-bw.png);
-        &:hover {
-            background-image: url(/assets/img/lang-icons/ch-icon.png);
-        }
+  }
+
+  a.cn i {
+    background-image: url(/assets/img/lang-icons/ch-icon-bw.png);
+    &:hover {
+        background-image: url(/assets/img/lang-icons/ch-icon.png);
     }
-    a.en {
-        background-image: url(/assets/img/lang-icons/en-icon-bw.png);
-        &:hover {
-            background-image: url(/assets/img/lang-icons/en-icon.png);
-        }
+  }
+
+  a.en i {
+    pointer-events: none;
+    background-image: url(/assets/img/lang-icons/en-icon.png);
+  }
+}
+
+.language-selector.cn {
+  a.de i {
+    background-image: url(/assets/img/lang-icons/de-icon-bw.png);
+    &:hover {
+      background-image: url(/assets/img/lang-icons/de-icon.png);
     }
+  }
+
+  a.cn i {
+    background-image: url(/assets/img/lang-icons/ch-icon.png);
+    pointer-events: none;
+  }
+
+  a.en i {
+    background-image: url(/assets/img/lang-icons/en-icon-bw.png);
+    &:hover {
+        background-image: url(/assets/img/lang-icons/en-icon.png);
+    }
+  }
 }
 
 // Logo and branding
@@ -49,7 +91,7 @@ header {
   position: relative;
   text-transform: uppercase;
   font-size: 19px;
-  margin: 19px 0 15px;
+  margin: 28px 0 15px;
 
   img {
     height: 29px;
@@ -70,16 +112,40 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  ul.language-selector {
+    li {
+      a {
+        padding: 12px 12px;
+        i {
+          display: inline-block;
+          width: 14px;
+          height: 14px;
+          background-size: contain;
+
+        }
+      }
+    }
+    li:last-child a {
+      margin-right: -12px;
+    }
+
+  }
+
+  ul.nav-list {
+    li {
+      padding: 12px 16px;
+    }
+    li:last-child {
+      padding: 12px 0 12px 16px;
+    }
+  }
+
   ul {
     list-style: none;
     margin: 0;
-    li:last-child {
-      padding: 0.7em 0 0.7em 0.7em;
-    }
     li {
       float: left;
       position: relative;
-      padding: 0.7em;
       a {
         text-decoration: none;
       }
@@ -87,7 +153,8 @@ nav {
       a:visited {
         display: block;
         color: $baseColor;
-        &:hover {
+        &:hover,
+        &.active {
           font-weight: bold;
         }
       } // Dropdown list
@@ -125,6 +192,26 @@ nav {
   nav {
     display: block;
     width: 100%;
+    ul.language-selector {
+      text-align: right;
+      padding-top: 1em;
+      margin-top: 1em;
+      border-top: 1.6px solid #e1e1e1;
+      li {
+        display: inline-block;
+        border-bottom: none;
+      }
+    }
+
+    ul.nav-list {
+      li {
+        border-bottom: 1.5px solid #e1e1e1;
+      }
+      li:first-child {
+        padding: 0 16px 12px 16px;
+      }
+    }
+
     ul {
       display: none;
       li {
@@ -145,7 +232,7 @@ nav {
 #nav-toggle {
   position: absolute;
   left: 18px;
-  top: 22px;
+  top: 31px;
   cursor: pointer;
   padding: 10px 35px 16px 0px;
   span,

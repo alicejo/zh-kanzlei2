@@ -1,28 +1,31 @@
-<section class="team">
+{% assign t = site.data.languages[page.lang] %}
+<section class="team section" id="team">
 	<article>
-		<h2>Team</h2>
+		<h2>{{t.team.title}}</h2>
 		<div>
 			<h4>Partner</h4>
-
 			<ul>
 				<li>
 					<img src="/assets/img/team/ziebig.jpg">
 					<h3>Ziebig</h3>
-					<p>Patentanwältin</p>
+					<p>{{t.team.patent_attorney_f}}</p>
+					<a href="{{t.url_sub}}/ziebig">{{t.team.more}}</a>
 				</li>
 				<li>
 					<img src="/assets/img/team/hengelhaupt.jpg">
 					<h3>Hengelhaupt</h3>
-					<p>Patentanwalt</p>
+					<p>{{t.team.patent_attorney}}</p>
+					<a href="{{t.url_sub}}/hengelhaupt">{{t.team.more}}</a>
 				</li>
 				<li>
 					<img src="/assets/img/team/schrick.jpg">
 					<h3>Schrick</h3>
-					<p>Patentanwalt</p>
+					<p>{{t.team.patent_attorney}}</p>
+					<a href="{{t.url_sub}}/schrick">{{t.team.more}}</a>
 				</li>
 			</ul>
 		</div>
-		<div>
+		<div class="mitarbeiter">
 			<h4>Mitarbeiter</h4>
 			<ul>
 				<li>
@@ -40,14 +43,17 @@
 				<li>
 					<img src="/assets/img/team/feng.jpg">
 					<h3>Feng</h3>
+					<a href="{{t.url_sub}}/feng">{{t.team.more}}</a>
 				</li>
 				<li>
 					<img src="/assets/img/team/heinrich.jpg">
 					<h3>Heinrich</h3>
+					<a href="{{t.url_sub}}/heinrich">{{t.team.more}}</a>
 				</li>
 				<li>
 					<img src="/assets/img/team/sun.jpg">
 					<h3>Sun</h3>
+					<a href="{{t.url_sub}}/sun">{{t.team.more}}</a>
 				</li>
 				<li>
 					<img src="/assets/img/team/walter.jpg">
@@ -56,6 +62,7 @@
 				<li>
 					<img src="/assets/img/team/zhu.jpg">
 					<h3>Zhu</h3>
+					<a href="{{t.url_sub}}/zhu">{{t.team.more}}</a>
 				</li>
 			</ul>
 		</div>

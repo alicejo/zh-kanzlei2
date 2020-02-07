@@ -2,7 +2,7 @@
 <header class="navigation">
   <div class="nav-content">
     <div class="brand">
-      <a href="#!">Ziebig 
+      <a href="/#home">Ziebig 
         <br>& Hengelhaupt</a>
       <img src="/assets/img/ziebig-hengelhaupt-logo.png">
     </div>
@@ -12,27 +12,31 @@
           {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
           {% for page in pages %}
             <li>
-              <a href="{{ page.url }}" class="{{ page.lang }}"></a>
+              <a href="{{ page.url }}" class="{{ page.lang }}"><i></i></a>
             </li>
           {% endfor %}  
       </ul>
-      <ul class="nav-list">
-        <li>
-          <a href="#">{{t.menu.about}}</a>
-        </li>
-        <li>
-          <a href="#">{{t.menu.team}}</a>
-        </li>
-        <li>
-          <a href="#">{{t.menu.areas}}</a>
-        </li>
-        <li>
-          <a href="#">{{t.menu.contact}}</a>
-        </li>
-        <li>
-          {{t.menu.tel}}
-        </li>
-      </ul>
+      <div class="m1 menu">
+      <div id="menu-center">
+        <ul class="nav-list">
+          <li>
+            <a class="active" href="#about">{{t.about.title}}</a>
+          </li>
+          <li>
+            <a href="#area">{{t.areas.title}}</a>
+          </li>
+          <li>
+            <a href="#team">{{t.team.title}}</a>
+          </li>
+          <li>
+            <a href="#contact">{{t.menu.contact}}</a>
+          </li>
+          <li>
+            {{t.menu.tel}}
+          </li>
+        </ul>
+        
+      </div>
     </nav>
   </div>
 </header>
